@@ -489,6 +489,8 @@ http://www.templatemo.com/tm-498-Ashva Ramesh
                     <li role="presentation"><a href="#mentor" aria-controls="mentor" role="tab" data-toggle="tab">Mentor</a></li>
                     <li role="presentation"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab">Resources</a></li>
                     <li role="presentation"><a href="#design" aria-controls="design" role="tab" data-toggle="tab">Designs</a></li>
+                    <!-- New Tab for Second Semester -->
+                    <li role="presentation"><a href="#second-semester" aria-controls="second-semester" role="tab" data-toggle="tab">Second Semester</a></li>
                 </ul>
 
                 <div class="tab-content" style="margin-top:30px; font-size:1.1em; line-height:1.8;">
@@ -567,6 +569,19 @@ http://www.templatemo.com/tm-498-Ashva Ramesh
                             <li><a href="#" class="color-white" style="text-decoration:underline;">High-Fidelity UI Designs</a></li>
                         </ul>
                     </div>
+
+                    <!-- New Second Semester Tab -->
+                    <div role="tabpanel" class="tab-pane fade" id="second-semester">
+                        <h3 class="color-yellow" style="font-size:1.5em;">Weekly Update - Feb 20 Week</h3>
+                        <p class="color-white lead" style="line-height:1.8; font-size:1.1em;">
+                            <strong>Updated Portfolio Page – Key Changes This Week:</strong>
+                        </p>
+                        <ul class="color-white lead" style="line-height:1.8; font-size:1.1em; list-style-type: disc; margin-left:20px;">
+                            <li>Removed Online Features: Eliminated Firebase-based authentication and database sync to comply with Apple’s offline-first requirements.</li>
+                            <li>Converted to Swift Playgrounds: Reorganized code structure to ensure compatibility with Swift Playgrounds, including handling data persistence locally instead of using a cloud backend.</li>
+                            <li>UI/UX Enhancements: Minor refinements in button responsiveness, layout adjustments, and accessibility improvements to ensure a polished interface.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -639,6 +654,12 @@ http://www.templatemo.com/tm-498-Ashva Ramesh
                         <div class="background-image" style="background-image:url('images/placeholder-design3.jpg'); height:200px; background-size:cover; background-position:center; margin-top:30px;"></div>
                         <p class="color-white text-center" style="font-size:0.9em; margin-top:10px;">(Design Screenshot #3)</p>
                     </div>
+                    
+                    <!-- New Second Semester Image Placeholder -->
+                    <div role="tabpanel" class="tab-pane fade" id="second-semester-img">
+                        <div class="background-image" style="background-image:url('images/placeholder-second-semester.jpg'); height:200px; background-size:cover; background-position:center; margin-bottom:20px;"></div>
+                        <p class="color-white text-center" style="font-size:0.9em;">(Second Semester Weekly Update Screenshot)</p>
+                    </div>
                 </div>
             </div>
 
@@ -654,7 +675,8 @@ http://www.templatemo.com/tm-498-Ashva Ramesh
             '#milestones': '#milestones-img',
             '#mentor': '#mentor-img',
             '#resources': '#resources-img',
-            '#design': '#design-img'
+            '#design': '#design-img',
+            '#second-semester': '#second-semester-img'
         };
 
         $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
